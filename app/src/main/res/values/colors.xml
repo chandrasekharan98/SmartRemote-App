@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#121212</color>
+    <color name="colorPrimaryDark">#000000</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="bgBottomNavigation">#fe485a</color>
+    <color name="bgFragment">#ef180526</color>
+    <color name="bgtone">#720ae9</color>
+    <color name="universalText">#ffffff</color>
+    <color name="subtext">#4c4c4c</color>
+    <color name="album_title">#4c4c4c</color>
+    <color name="year">#999999</color>
+    <color name="title">#222222</color>
+    <color name="bgrd1">#180526</color>
+</resources>

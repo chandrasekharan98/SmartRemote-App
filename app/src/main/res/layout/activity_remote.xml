@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:background="@color/bgFragment"
+    android:layout_height="match_parent"
+    tools:context="info.androidhive.bottomnavigation.RemoteActivity">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:background="@color/bgFragment"
+        android:layout_height="match_parent"
+        tools:context="info.androidhive.bottomnavigation.RemoteActivity">
+
+
+        <ImageView
+            android:id="@+id/centreWheel"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="150dp"
+            app:srcCompat="@drawable/basic" />
+
+        <ImageView
+            android:id="@+id/chplus"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_alignTop="@+id/sensor"
+            android:layout_marginTop="8dp"
+            android:layout_toEndOf="@+id/centreWheel"
+            app:srcCompat="@drawable/chplus" />
+
+        <ImageView
+            android:id="@+id/chminus"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_alignTop="@+id/chplus"
+            android:layout_toStartOf="@+id/centreWheel"
+            app:srcCompat="@drawable/chminus" />
+
+        <ImageView
+            android:id="@+id/upButton"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignTop="@+id/centreWheel"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="12dp"
+            app:srcCompat="@drawable/button" />
+
+        <ImageView
+            android:id="@+id/rightButton"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignBottom="@+id/chplus"
+            android:layout_marginBottom="19dp"
+            android:layout_marginEnd="11dp"
+            android:layout_toStartOf="@+id/chplus"
+            app:srcCompat="@drawable/button" />
+
+        <ImageView
+            android:id="@+id/downButton"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignBottom="@+id/centreWheel"
+            android:layout_alignStart="@+id/upButton"
+            android:layout_marginBottom="11dp"
+            app:srcCompat="@drawable/button" />
+
+        <ImageView
+            android:id="@+id/leftButton"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignTop="@+id/rightButton"
+            android:layout_marginStart="11dp"
+            android:layout_toEndOf="@+id/chminus"
+            app:srcCompat="@drawable/button" />
+
+        <ImageView
+            android:id="@+id/power"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="35dp"
+            app:srcCompat="@drawable/power" />
+
+        <ImageView
+            android:id="@+id/menu"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_above="@+id/upButton"
+            android:layout_alignStart="@+id/chminus"
+            android:alpha="0.6"
+            android:layout_marginBottom="13dp"
+            app:srcCompat="@drawable/menu" />
+
+        <ImageView
+            android:id="@+id/mute"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:alpha="0.6"
+            android:layout_alignBottom="@+id/menu"
+            android:layout_toEndOf="@+id/centreWheel"
+            app:srcCompat="@drawable/mute" />
+
+        <ImageView
+            android:id="@+id/mike"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignEnd="@+id/menu"
+            android:layout_below="@+id/centreWheel"
+            android:layout_marginTop="28dp"
+            android:alpha="0.6"
+            app:srcCompat="@drawable/mike" />
+
+        <ImageView
+            android:id="@+id/numeric"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignTop="@+id/mike"
+            android:layout_toEndOf="@+id/centreWheel"
+            android:alpha="0.6"
+            app:srcCompat="@drawable/numeric" />
+
+        <SeekBar
+            android:id="@+id/volumebar"
+            android:layout_width="250dp"
+            android:layout_height="25dp"
+            android:layout_alignEnd="@+id/numeric"
+            android:layout_below="@+id/numeric"
+            android:layout_marginEnd="8dp"
+            android:layout_marginTop="63dp" />
+
+        <ImageView
+            android:id="@+id/sensor"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_below="@+id/upButton"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="18dp"
+            android:alpha="0.6"
+            app:srcCompat="@drawable/sensoroff" />
+
+        <ImageView
+            android:id="@+id/volume"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+
+            android:alpha="0.6"
+            android:layout_below="@+id/volumebar"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="14dp"
+            app:srcCompat="@drawable/volume" />
+
+
+    </RelativeLayout>
+
+
+    <android.support.design.widget.BottomNavigationView
+        android:id="@+id/navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:background="@drawable/background_color"
+        android:foreground="?attr/selectableItemBackground"
+        app:itemIconTint="@android:color/white"
+        app:itemTextColor="@android:color/white"
+        app:menu="@menu/navigation" />
+
+</android.support.design.widget.CoordinatorLayout>

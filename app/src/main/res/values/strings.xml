@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Smart Remote</string>
+    <string name="title_camera">Camera</string>
+    <string name="title_home">Home</string>
+    <string name="title_category">TV</string>
+    <string name="title_remote">Remote</string>
+    <string name="title_wish">Wish List</string>
+    <string name="action_settings">Settings</string>
+    <string name="action_add_favourite">Add to Favourites</string>
+    <string name="action_play_next">Play Next</string>
+    <string name="sample_text">Current channel is being telecasted here .if you want to change the channel swipe and click on it</string>
+</resources>

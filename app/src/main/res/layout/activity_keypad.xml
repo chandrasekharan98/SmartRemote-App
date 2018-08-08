@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:keyboard="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+    android:background="@color/bgFragment"
+android:orientation="vertical"
+tools:context="info.androidhive.bottomnavigation.KeypadActivity">
+<android.support.v7.widget.RecyclerView
+    android:id="@+id/recycler_view"
+    android:layout_width="match_parent"
+    android:layout_height="200dp"
+    android:clipToPadding="false"
+    android:scrollbars="vertical" />
+
+<TextView
+    android:id="@+id/amount"
+    style="@style/Base.TextAppearance.AppCompat.Title"
+    android:layout_width="wrap_content"
+    android:layout_height="50dp"
+    android:layout_gravity="center"
+    android:layout_margin="10dp"
+    android:textColor="@color/bgtone"
+    android:gravity="center"
+    android:text="0"
+    android:textSize="30sp"/>
+
+<com.davidmiguel.numberkeyboard.NumberKeyboard
+    android:id="@+id/numberKeyboard"
+    android:layout_width="match_parent"
+    android:layout_height="220dp"
+    keyboard:keyWidth="45dp"
+    keyboard:numberKeyTextColor="@color/bgBottomNavigation"
+    keyboard:keyHeight="45dp"
+    keyboard:numberKeyTextSize="25sp"
+    keyboard:keyboardType="integer"/>
+
+</LinearLayout>
